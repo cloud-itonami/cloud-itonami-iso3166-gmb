@@ -1,0 +1,15 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:id "gmb.dish.domoda", :name "Domoda", :country "GMB", :kind :dish, :summary "The national dish of the Gambia, a stew made with peanut paste.", :url "https://en.wikipedia.org/wiki/Gambian_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "gmb.dish.benachin", :name "Benachin", :country "GMB", :kind :dish, :summary "Gambian one-pot rice dish, a slightly different version of thieboudienne, traditionally cooked in one pot.", :url "https://en.wikipedia.org/wiki/Gambian_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "gmb.dish.yassa", :name "Yassa", :country "GMB", :kind :dish, :summary "Lemon whole-chicken or fish dish, part of Gambian cuisine.", :url "https://en.wikipedia.org/wiki/Gambian_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "gmb.dish.supakanja", :name "Supakanja", :country "GMB", :kind :dish, :summary "Gambian okra stew or soup made with palm oil.", :url "https://en.wikipedia.org/wiki/Gambian_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "gmb.beverage.attaya", :name "Attaya", :country "GMB", :kind :beverage, :summary "Sweet green tea, triple-brewed, a common beverage in the Gambia.", :url "https://en.wikipedia.org/wiki/Gambian_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "gmb.beverage.wonjo", :name "Wonjo", :country "GMB", :kind :beverage, :summary "Sweet Gambian hibiscus drink made by steeping the roselle fruit.", :url "https://en.wikipedia.org/wiki/Gambian_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "gmb.heritage.kunta-kinteh-island", :name "Kunta Kinteh Island", :country "GMB", :kind :heritage, :summary "Island in the Gambia River, 30 km from the river mouth, listed as a UNESCO World Heritage Site for its significance in West African slave-trade history.", :url "https://en.wikipedia.org/wiki/Kunta_Kinteh_Island", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "gmb.heritage.senegambian-stone-circles", :name "Senegambian stone circles", :country "GMB", :kind :heritage, :summary "Megalithic stone circles located in the Gambia north of Janjanbureh and in central Senegal, inscribed on the UNESCO World Heritage List in 2006.", :url "https://en.wikipedia.org/wiki/Senegambian_stone_circles", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+]
