@@ -136,7 +136,16 @@
 
   Coverage is reported HONESTLY (see `coverage`): a jurisdiction not in
   this table has NO spec-basis, full stop -- the advisor must not
-  fabricate one, and the governor holds if it tries.")
+  fabricate one, and the governor holds if it tries.
+
+  Prior revisions of `catalog` also carried unlabeled USA/DEU entries
+  byte-identical to boilerplate entries in unrelated sibling repos --
+  no README/docs in this repo ever documented a deliberate
+  comparative-jurisdiction design, so this was scaffold-copy
+  contamination, not intent. Removed 2026-07-23; extend `catalog` with
+  a new jurisdiction only behind its own primary-source citation, never
+  by re-copying another repo's entry verbatim. The GMB entry itself is
+  untouched by this removal.")
 
 (def catalog
   "iso3 -> requirement map. `:required-evidence` mirrors the generic
@@ -168,25 +177,7 @@
           :sic-legal-basis "GIEPA Act 2015 (giepa.gm/invest-in-gambia/incentives, own text, fetched directly): 'In accordance with the GIEPA Act 2015, the following priority sectors and regions of The Gambia are eligible to receive incentives.' Own definition of the Special Investment Certificate (SIC): 'The SIC is the main incentive scheme and is available for domestic and foreign investors if they invest a minimum of, respectively, $100,000 and $250,000 in a priority sector and/or in a priority area, employ a minimum number of Gambians set by the regulations, or create value addition.' Only the minimum-investment-amount branch is modeled -- the workforce/value-addition alternative branches are delegated/unquantified in this source and deliberately not modeled, see namespace docstring"
           :sic-criteria {:min-investment-usd-domestic 100000
                          :min-investment-usd-foreign 250000}
-          :sic-provenance "https://www.giepa.gm/invest-in-gambia/incentives"}
-   "USA" {:name "United States"
-          :owner-authority "U.S. General Services Administration (GSA) / SAM.gov"
-          :legal-basis "Federal Acquisition Regulation (FAR); System for Award Management"
-          :national-spec "SAM.gov entity registration + NAICS self-certification"
-          :provenance "https://sam.gov/"
-          :required-evidence ["EIN record"
-                              "SAM.gov registration record"
-                              "State business registration record"
-                              "Authorized-representative record"]}
-   "DEU" {:name "Germany"
-          :owner-authority "Beschaffungsamt des BMI / e-Vergabe platforms"
-          :legal-basis "Gesetz gegen Wettbewerbsbeschränkungen (GWB) / VgV"
-          :national-spec "e-Vergabe supplier registration under EU procurement directives"
-          :provenance "https://www.evergabe-online.de/"
-          :required-evidence ["Handelsregister extract"
-                              "e-Vergabe registration record"
-                              "USt-IdNr record"
-                              "Authorized-representative record"]}})
+          :sic-provenance "https://www.giepa.gm/invest-in-gambia/incentives"}})
 
 (defn spec-basis
   "The jurisdiction's requirement map, or nil -- nil means NO spec-basis,
