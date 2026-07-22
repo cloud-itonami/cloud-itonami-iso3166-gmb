@@ -26,10 +26,15 @@
     (is (nil? (facts/required-evidence-satisfied? "ATL" all)))))
 
 (deftest coverage-is-honest
-  (let [c (facts/coverage ["GMB" "USA" "ATL"])]
+  (let [c (facts/coverage ["GMB" "ATL" "ZZZ"])]
     (is (= 3 (:requested c)))
-    (is (= 2 (:covered c)))
-    (is (= ["ATL"] (:missing-jurisdictions c)))))
+    (is (= 1 (:covered c)))
+    (is (= ["GMB"] (:covered-jurisdictions c)))
+    (is (= ["ATL" "ZZZ"] (:missing-jurisdictions c)))))
+
+(deftest catalog-is-gambia-only
+  (testing "no unlabeled foreign-jurisdiction contamination (scaffold-copy incident)"
+    (is (= #{"GMB"} (set (keys facts/catalog))))))
 
 (deftest sic-spec-basis-criteria
   (let [sic (facts/sic-spec-basis "GMB")]
