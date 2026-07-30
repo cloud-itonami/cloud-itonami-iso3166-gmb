@@ -1,0 +1,14 @@
+;; The GMB market-entry actor's Worker. :esm, the same shape as every other
+;; actor on the shared host.
+;; Shared cache: same classpath across the family apart from this actor's
+;; own marketentry.* sources, so the deps compile once per batch (69s vs
+;; ~180s). Safe only because resource-guard serializes builds; verified
+;; not to leak one country into another's bundle.
+{:cache-root "/tmp/shadow-cache"
+ :deps {:aliases [:cljs]}
+ :builds
+ {:worker
+  {:target :esm
+   :output-dir "dist"
+   :modules {:worker {:exports {default marketentry.edge.worker/app}}}
+   :compiler-options {:output-feature-set :es2020 :infer-externs :auto}}}}
