@@ -6,7 +6,7 @@ Independent public-sector market-entry compliance for The Gambia.
   Procurement Act 2022 (GPPA's own site names this Act; its detailed
   provisions and supplier registration-requirements checklist sit
   behind a client-side-rendered application this iteration could not
-  read around -- see `src/marketentry/facts.cljc`)
+  read around -- see `src/marketentry/facts.kotoba`)
 - Companies Department (Ministry of Justice) business/company
   registration -- own published fee schedule tiered by declared share
   capital (up to D500,000: D10,000; D500,000-D1,000,000: D15,000;

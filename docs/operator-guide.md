@@ -3,7 +3,7 @@
 Portal: Gambia Public Procurement Authority (GPPA, gppa.gm) --
 Supplier Registration Portal exists per GPPA's own navigation; its
 detailed document checklist could not be independently read this
-iteration (client-side-rendered page, see `src/marketentry/facts.cljc`).
+iteration (client-side-rendered page, see `src/marketentry/facts.kotoba`).
 Entity: Companies Department (Ministry of Justice) business/company
 registration + Gambia Revenue Authority (GRA) Taxpayer Identification
 Number (TIN) record. Engagements seeking a GIEPA Special Investment

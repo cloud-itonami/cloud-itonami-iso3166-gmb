@@ -34,7 +34,7 @@ as every `cloud-itonami-iso3166-*` sibling in this fleet:
   research trail and honestly-narrowed scope, including facts this
   iteration could NOT verify, such as GPPA's detailed Procurement Act
   2022 provisions and a domestic Companies Act citation).
-- `src/statute/facts.cljc` -- general-law catalog: the Labour Act,
+- `src/statute/facts.kotoba` -- general-law catalog: the Labour Act,
   2023 (Ministry of Trade, Industry, Regional Integration &
   Employment) and the Income and Value Added Tax Act (2012, Gambia
   Revenue Authority, year corroborated independently from GIEPA's own
@@ -64,7 +64,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) — national dishes, protected products, beverages,
 crafts, festivals and heritage sites for the Gambia:
 
-- `src/culture/facts.cljc` — the catalog, source of truth (keyed by
+- `src/culture/facts.kotoba` — the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` — DataScript schema.
 - `data/culture-tx.edn` — derived DataScript tx-data (regenerated from
